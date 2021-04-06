@@ -6,7 +6,8 @@ function settingVue() {
   new Vue({
       el: '#app', 
       data: {
-          content : 'Hello Vue!'
+          content : `Hello V! Greetings from Punchin'Judy`,
+          imgContent: "img/judy.jpg"
       },
   });
 }
