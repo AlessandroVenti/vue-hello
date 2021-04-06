@@ -1,37 +1,16 @@
-                      // Modificare il codice appena condiviso per stampare all'interno dell'h1 il contatore di click fatti dall'utente sul bottone
+                      // GOAL: stampare a schermo il contenuto di una variabile dentro un h1
+                      //BONUS: utilizzare un data come nome del file immagine in un tag img
 
-                      
 
-function initVue() {
+function settingVue() {
   new Vue({
       el: '#app', 
       data: {
-          'bgClass': 'bg-red',
-          'count' : 0
+          content : 'Hello Vue!'
       },
-      methods: {
-          increase: function() {
-              this.count++;
-          },
-
-          decrease: function() {
-            this.count--;
-          }
-      }
   });
 }
-// function initJQuery() {
-//   const initText = 'Hello World!!';
-//   $('#input-msg').val(initText);
-//   $('#text-msg').text(initText);
-//   $('#input-msg').keyup(function() {
-//       const input = $(this);
-//       const text = input.val();
-//       $('#input-msg').text(text);
-//   });
-// }
-function init() {
-  initVue();
-  // initJQuery();
-}
-$(init);
+
+
+$(settingVue);                      
+
